@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    <title>jefferson</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Editar Produtos</h1>
+    <form action="/produtos/editar?_method=PUT" method="POST">
+        <input type="text" name="nomeProdutos" id="" value="<%= produto.nome %>">
+        <input type="number" name="precoProdutos" id="" value="<%= produto.preco%>">
+        <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
